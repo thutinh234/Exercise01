@@ -1,0 +1,31 @@
+
+1. Automation Test là gì?
+-- Automation Test (kiểm thử tự động) là: Dùng code để tự động kiểm tra phần mềm thay vì test thủ công.
+2. Tại sao cần Auto Test?
+-- Lý do chính:
+-  Tiết kiệm thời gian: Test 1 lần viết → chạy lại nhiều lần
+- Giảm lỗi do con người: Không bị quên bước, click sai
+- Chạy được nhiều dữ liệu: Test 100 account trong vài phút
+- Chạy liên tục (CI/CD): Tích hợp với Jenkins, GitHub Actions
+- Tăng độ tin cậy: Regression test rất mạnh
+3. Khi nào cần chạy Auto Test?
+- NÊN dùng khi:
++ Test lặp lại nhiều
+Login
+Checkout
+Form nhập liệu
++ Regression test
+Sau mỗi lần sửa code
++ Dự án ổn định
+UI ít thay đổi
+- KHÔNG nên dùng khi:
+UI thay đổi liên tục
+Test 1 lần duy nhất
+Test trải nghiệm người dùng (UX)
+
+4. Có mấy loại Selenium?
+- Selenium có 4 thành phần chính:
++ Selenium IDE: Tool record & playback và dễ dùng không cần code
++ Selenium WebDriver: Viết code (Java, Python…) và Điều khiển browser thật
++ Selenium Grid: Chạy test song song và nhiều máy, nhiều browser
++ Selenium RC (Remote Control)
